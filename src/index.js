@@ -200,10 +200,10 @@ function loop() {
 	requestAnimFrame( loop );
 	
 	// increase the hue to get different colored fireworks over time
-	//hue += 0.5;
+	hue += 0.5;
   
-  // create random color
-  hue= random(0, 360 );
+    // create random color
+    hue= random(0, 360 );
 	
 	// normally, clearRect() would be used to clear the canvas
 	// we want to create a trailing effect though
@@ -297,3 +297,47 @@ canvas.addEventListener( 'mouseup', function( e ) {
 
 // once the window loads, we are ready for some fireworks!
 window.onload = loop;
+
+var link_0 = document.getElementById("link0"),
+    link_1 = document.getElementById("link1"),
+    link_2 = document.getElementById("link2");
+
+var container_home = document.getElementById("home-section"),
+    container_letter = document.getElementById("letter-section"),
+    container_photos = document.getElementById("photos-section");
+
+link_0.addEventListener("click", function(e){
+    e.preventDefault();
+    container_home.classList.remove("hidden-item");
+    container_letter.classList.add("hidden-item");
+    container_photos.classList.add("hidden-item");
+});
+
+link_1.addEventListener("click", function(e){
+    e.preventDefault();
+    container_home.classList.add("hidden-item");
+    container_letter.classList.remove("hidden-item");
+    container_photos.classList.add("hidden-item");
+});
+
+link_2.addEventListener("click", function(e){
+    e.preventDefault();
+    container_home.classList.add("hidden-item");
+    container_letter.classList.add("hidden-item");
+    container_photos.classList.remove("hidden-item");
+
+    add_images(e);
+});
+
+var images = document.getElementById("photos-section");
+
+function add_images(e)
+{
+    e.preventDefault();
+    console.log("yes");
+    for (let i = 1; i <= 42; i++)
+    {
+        var text = `<img src="src/images/${i}.jpg" />`;
+        images.innerHTML += text;
+    }
+}
