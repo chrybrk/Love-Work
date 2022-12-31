@@ -1,0 +1,60 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    overflow-y: hidden;
+	background: #000;
+	margin: 0;
+}
+
+nav {
+    position: fixed;
+    z-index: 100;
+    height: 10vh;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: Source Code Pro;
+}
+
+nav > a {
+    margin: 10px;
+    padding: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    color: #3498db;
+}
+
+#home-section {
+    margin-top: 18%;
+    margin-left: 33%;
+    font-size: 34px;
+    color: white;
+    text-align: center;
+}
+
+#letter-section {
+    width: 100%;
+    height: 7vh;
+}
+
+canvas {
+	cursor: crosshair;
+	display: block;
+}
+
+#container {
+    text-align: center;
+    position: relative;
+}
+
+#container canvas, .overlay {
+    position: absolute;
+}
