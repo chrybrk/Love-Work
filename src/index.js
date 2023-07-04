@@ -255,20 +255,7 @@ function loop() {
 
 var home_text = document.getElementById("home-text");
 
-var list_of_text = [
-    "<q>Happy New Year, Miss Ankita Tomar <br> and a very happy welcome to 2023.</q>",
-    "<q>You made this year more beautiful, <br> by coming in my life.</q>",
-    "<q>Just the way you are, <br> makes my heart fall in love with you.</q>",
-    "<q>Everything just seems so perfect <br> even a song named Perfect doesn't seem more perfect than you.</q>",
-    "<q>You came to the worst of my, <br> and stayed at the beautiful days too.</q>",
-    "<q>You're like sparkling lights <br> which gives me hope to give a chance to love.</q>",
-    "<q>We both lost intrest in love, <br> but look at us now.</q>",
-    "<q>I'm glad i met you.</q>",
-    "<q>You the one who makes me smile <br> and annoy me too.</q>",
-    "<q>Look at the moon babe, <br> because its always lookin' back at you just like i do.</q>",
-    "<q>Don't you think? <br> Moon reminds you of me.</q>",
-    "<q>At the end of the day, <br> Its always gonna be you and i.</q>"
-];
+// text here
 
 function change_home_text()
 {
